@@ -7,19 +7,19 @@ This lightweight Flask application allows you to connect to your Spotify account
 ## ✅ Project Checklist
 
 ### 1. Setup
-- [✅ ] Create Flask backend project  
-- [ ] Create React frontend with Vite or CRA  
-- [ ] Enable CORS between frontend and backend  
-- [ ] Connect frontend to backend locally (test with `/ping` route)  
+- [✅] Create Flask backend project  
+- [✅] Create React frontend with Vite or CRA  
+- [✅] Enable CORS between frontend and backend  
+- [✅] Connect frontend to backend locally (test with `/ping` route)  
 
 ---
 
 ### 2. Spotify Integration (Backend)
-- [✅ ] Register Spotify app  
-- [✅ ] Set `REDIRECT_URI` and environment variables  
-- [ ] Implement `/login` route (redirect to Spotify auth)  
-- [ ] Implement `/callback` to:  
-  - Exchange code for `access_token`  
+- [✅] Register Spotify app  
+- [✅] Set `REDIRECT_URI` and environment variables  
+- [✅] Implement `/login` route (redirect to Spotify auth)  
+- [✅] Implement `/callback` to:  
+-[✅] Exchange code for `access_token`  
   - Store token in Flask session  
 - [ ] Implement `get_top_artists()` helper  
 
