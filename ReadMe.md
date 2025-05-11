@@ -7,7 +7,7 @@ This lightweight Flask application allows you to connect to your Spotify account
 ## ✅ Project Checklist
 
 ### 1. Setup
-- [ ] Create Flask backend project  
+- [✅ ] Create Flask backend project  
 - [ ] Create React frontend with Vite or CRA  
 - [ ] Enable CORS between frontend and backend  
 - [ ] Connect frontend to backend locally (test with `/ping` route)  
@@ -15,8 +15,8 @@ This lightweight Flask application allows you to connect to your Spotify account
 ---
 
 ### 2. Spotify Integration (Backend)
-- [ ] Register Spotify app  
-- [ ] Set `REDIRECT_URI` and environment variables  
+- [✅ ] Register Spotify app  
+- [✅ ] Set `REDIRECT_URI` and environment variables  
 - [ ] Implement `/login` route (redirect to Spotify auth)  
 - [ ] Implement `/callback` to:  
   - Exchange code for `access_token`  
@@ -26,9 +26,9 @@ This lightweight Flask application allows you to connect to your Spotify account
 ---
 
 ### 3. Ticketmaster Integration (Backend)
-- [ ] Register for Ticketmaster API key  
-- [ ] Create `get_ticketmaster_events()` function  
-- [ ] Implement `/events` route to return events near a city  
+- [✅ ] Register for Ticketmaster API key  
+- [✅ ] Create `get_ticketmaster_events()` function  
+- [✅ ] Implement `/events` route to return events near a city  
 
 ---
 
