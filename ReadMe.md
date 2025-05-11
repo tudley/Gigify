@@ -2,16 +2,20 @@
 
 This lightweight Flask application allows you to connect to your Spotify account and creates a custom playlist based on upcoming gigs in your area and your listening preferences.
 
-At this current time, the following functionalities exist:
+## 🚀 Current Functionality
 
-  Backend local deployment:
-    - You can run the flask application'gigify.py' and use manual url routing.
-    - The following URLs are routed as API endpoints for my frontend:
-      - '/events/bristol' - please enter a city you'd like to query TicketMaster about
-      - '/artists/pixies' - please enter an artist you'd like to query Spotify about
+### 🔧 Backend Local Deployment
 
-  API integration:
-    - Currently working on APIIntegration.py, a script pulling my seperate API calls together, here I'm facing challenges such as IP location services giving me 'locations' not in TicketMasters database (ie. Windsor, instead of London)
+- You can run the Flask application `gigify.py` and use manual URL routing.
+- The following URLs are routed as API endpoints for the frontend:
+  - `/events/bristol` — enter a city you'd like to query Ticketmaster about
+  - `/artists/pixies` — enter an artist you'd like to query Spotify about
+
+### 🌐 API Integration
+
+- Currently working on `APIIntegration.py`, a script pulling separate API calls together.
+- Challenges include:
+  - IP location services returning overly localized locations (e.g. "Windsor" instead of "London"), which are not always recognized by the Ticketmaster API.
 
 ---
 
