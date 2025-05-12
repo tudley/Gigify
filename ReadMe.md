@@ -2,6 +2,11 @@
 
 This lightweight Flask application allows you to connect to your Spotify account and creates a custom playlist based on upcoming gigs in your area and your listening preferences.
 
+## 🗝️ Requirements
+
+- IPInfo, Spotify and TicketMaster API keys
+- Flask, Flask-CORS, python-dotenv, requests
+
 ## 🚀 Current Functionality
 
 ### 🔧 Backend Local Deployment
