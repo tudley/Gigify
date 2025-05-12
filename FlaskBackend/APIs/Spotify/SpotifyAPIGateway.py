@@ -4,7 +4,6 @@ import base64
 import json
 
 from dotenv import load_dotenv
-
 load_dotenv()
 
 class Artist():
@@ -31,12 +30,6 @@ class Artist():
             song['id'] = object['id']
             self.catalog.append(song)
 
-
-class Event():
-    def __init__(self, artist, venue, date):
-        self.artist = artist
-        self.venue = venue
-        self.date = date
 
 class SpotifyAPIGateway():
     def __init__(self, client_id, client_secret, token=None, headers=None):
@@ -108,8 +101,7 @@ class SpotifyAPIGateway():
         else:
             artist = Artist(json_result['name'], json_result['id'])
         return artist
-
-
+    
         
     def get_songs_by_artist(self, artist):
         """Find the top 10 songs in the UK of an artist from their ID previously found"""
@@ -120,15 +112,12 @@ class SpotifyAPIGateway():
         return json_result
     
     
-
-
-
 if __name__ == "__main__":
-
     # OOP Approach
     client_id = os.getenv('SPOTIFY_CLIENT_ID')
     client_secret = os.getenv('SPOTIFY_CLIENT_SECRET')
     spotify = SpotifyAPIGateway(client_id, client_secret)
+    
     spotify.token = spotify.get_token()
     artist = spotify.search_for_artist('The Prodigy')
     artist.catalog_objects = spotify.get_songs_by_artist(artist)
@@ -137,10 +126,7 @@ if __name__ == "__main__":
     print(artist_dict)
 
 
-
-
-
-
+# legacy functions in case something breaks...
 def get_token(client_id, client_secret):
     """Here we are generating and returning our token to access the spotify web API
         Spotify required a base64 encoded string of "client_id:client_secret" """
