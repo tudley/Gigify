@@ -4,7 +4,7 @@ This lightweight Flask application allows you to connect to your Spotify account
 
 ## 🗝️ Requirements
 
-- IPInfo, Spotify and TicketMaster API keys
+- IPInfo, Spotify and TicketMaster API keys (Fill in the .env file with these values)
 - Flask, Flask-CORS, python-dotenv, requests
 
 ## 🚀 Current Functionality
